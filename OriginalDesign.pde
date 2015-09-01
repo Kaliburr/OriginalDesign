@@ -2,32 +2,27 @@ int x = 50;
 int y = 50;
 void setup()
 {
-	
 	 stroke(255,255,57);
-  
   }
 void draw()
 {
-	  	
  	background(199,233,243);
- 	
-  ellipse(10,50,10,10);
-  ellipse(15,65,10,10);
-  ellipse(25,75,10,10);
-  ellipse(37,85,10,10);
-  ellipse(50,90,10,10);
-  ellipse(63,85,10,10);
-  ellipse(75,75,10,10);
-  ellipse(85,65,10,10);
-  ellipse(90,50,10,10);
+  ellipse(10,50,10,10);//d
+  ellipse(15,65,10,10);//
+  ellipse(25,75,10,10);//e
+  ellipse(37,85,10,10);//
+  ellipse(50,90,10,10);//b
+  ellipse(63,85,10,10);//
+  ellipse(75,75,10,10);//c
+  ellipse(85,65,10,10);//
+  ellipse(90,50,10,10);//a
   ellipse(x,y,10,10);
-
   if(key=='a'){
   	x++;//9
   	if(x>90){
   		x=50;
   	}
-  	}
+  }
   if(key=='b'){
   	y++;//5
   	if(y>90){
@@ -48,7 +43,6 @@ void draw()
   		x=50;
   	}
   }
-  
   if(key=='e'){
   	x--;
   	y++;//3
@@ -57,22 +51,38 @@ void draw()
   		y=50;
   	}
   }
- if(x==10&&y==50){//d
+  if(key=='f'){
+  	y--;
+  	if(y<50){
+  		x=50;
+  		y=50;
+  	}
+  }
+  if(5<x&&x<15&&40<y&&y<60){//d
   	background(0,0,255);
   }
-  if(x==75&&y==75){//c
-  	background(255,255,0);
+  if(10<x&&x<20&&60<y&&y<70){//2
+  	background(255,175,14);
   }
-  if(x==25&&y==75){//e
+  if(20<x&&x<30&&70<y&&y<80){//e
   	background(82,78,9);
   }
-  if(x==37&&y==85){//
-  	background(26,70,8);
+  if(32<x&&x<42&&80<y&&y<90){//4
+  	background(255,14,14);
   }
-
-
-  	
- 
+  if(45<x&&x<55&&85<y&&y<95){//5
+  	background(224,51,150);
+  }
+  if(58<x&&x<68&&80<y&&y<90){//6
+  	background(189,50,5);
+  }
+  if(70<x&&x<80&&70<y&&y<80){//c
+  	background(255,255,0);
+  }
+  if(80<x&&x<90&&60<y&&y<70){//8
+  	background(201,11,178);
+  }
+  if(85<x&&x<95&&45<y&&y<55){//9
+  	background(139,247,239);
+  }
  }
-  
-
